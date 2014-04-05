@@ -20,11 +20,11 @@ duration = timedelta(hours=3)
 today = datetime.date.today()
 
 for line in display_file:
-    if line.startswith(tag) for tag in lines_to_edit:
+    if any(line.startswith(tag) for tag in lines_to_edit):
         line = tag + (duration + today)
 
-
 text += display_text 
+
 display_file = open("/home/pi/www/mnn/index.html", "w")
 display_file_lines = display_file.write(text)
 display_file.close()
