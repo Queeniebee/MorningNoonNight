@@ -20,4 +20,4 @@ OR
 
 [minute, hours, day, month, day of week]
 
-0 0-23/2 * * * /path/to/script.sh >/dev/null 2>&1
+0 */3 * * * /path/to/script.sh >/dev/null 2>&1
